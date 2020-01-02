@@ -18,10 +18,20 @@ return array (
   array (
     'Default' => 
     array (
-      'memcached_test' => 
+      'memcached_dev' => 
       array (
-        'hostname' => 'memcached',
-        'port' => '11211',
+        'hostname' => 'ec2-uw2a-d-bmo-all-jumpbox.galepartners.com',
+        'port' => '11212',
+      ),
+      'memcached_qa' => 
+      array (
+        'hostname' => 'ec2-uw2a-d-bmo-all-jumpbox.galepartners.com',
+        'port' => '11213',
+      ),
+      'memcached_uat' => 
+      array (
+        'hostname' => 'ec2-uw2a-d-bmo-all-jumpbox.galepartners.com',
+        'port' => '11214',
       ),
     ),
   ),

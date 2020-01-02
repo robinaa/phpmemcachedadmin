@@ -8,15 +8,15 @@ services:
     ports:
       - "80:80"
     restart: unless-stopped
-    links:
-      - memcached
-    depends_on:
-      - memcached
+#    links:
+#      - memcached
+#    depends_on:
+#      - memcached
     volumes:
       - ./Memcache.docker.php:/var/www/localhost/htdocs/Config/Memcache.php
-  memcached:
-    container_name: memcached
-    image: memcached
-    restart: unless-stopped
-    ports:
-     - "11211:11211"
+#  memcached:
+#    container_name: memcached
+#    image: memcached
+#    restart: unless-stopped
+#    ports:
+#     - "11211:11211"
